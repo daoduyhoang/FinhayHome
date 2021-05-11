@@ -1,0 +1,22 @@
+// RESET CSS
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
