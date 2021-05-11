@@ -3,6 +3,11 @@
   background-image: url("../images/Asset\ 11@20x\ 1.png");
   background-repeat: no-repeat;
   background-position: right 100px;
+  @include Responsive(SM) {
+    min-height: 400px;
+    background-size: 400px;
+    background-position: right 180px;
+  }
   .advantages {
     li {
       margin-bottom: 12px;
@@ -11,6 +16,27 @@
       img {
         margin-right: 12px;
       }
+    }
+    @include Responsive(XS) {
+      width: 100%;
+      padding-left: 25px;
+      margin-top: 40px;
+    }
+  }
+  @include Responsive(SM) {
+    .row {
+      flex-wrap: wrap-reverse;
+    }
+    .img_tichluy {
+      width: 48%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @include Responsive(XS) {
+    .img_tichluy {
+      width: 100%;
     }
   }
 }
@@ -22,6 +48,44 @@
   background-image: url("../images/Asset\ 11@20x\ 1.png");
   background-repeat: no-repeat;
   background-position: right -374px;
+  @include Responsive(XS) {
+    padding-bottom: 30px;
+  }
+  .invest_finhay-mb {
+    display: none;
+  }
+  @include Responsive(SM) {
+    min-height: 680px;
+    background-size: 400px;
+    background-position: right -232px;
+  }
+  @include Responsive(XS) {
+    .invest_finhay-pc {
+      display: none;
+    }
+    .invest_finhay-mb {
+      background-image: url(../images/dautu/Vector1.png);
+      background-repeat: no-repeat;
+      background-size: 211px 521px;
+      background-position: 50px 100px;
+      display: block;
+      .img_invest_finhay {
+        width: 50%;
+      }
+      .content_invest_finhay {
+        width: 40%;
+      }
+      .row {
+        justify-content: space-around;
+        align-items: center;
+      }
+      .receive {
+        .content_invest_finhay {
+          text-align: right;
+        }
+      }
+    }
+  }
   h2 {
     margin-bottom: 44px;
   }
@@ -98,5 +162,37 @@
   .funds {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  @include Responsive(SM) {
+    padding-top: 0;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  .list-portfolio {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 50px;
+      padding: 17px;
+      @include Responsive(SM) {
+        margin-right: 0;
+      }
+    }
+  }
+  .btn-portfolio {
+    display: inline-block;
+    background: #00c03c;
+    border-radius: 12px;
+    width: 306px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-family: $averta;
   }
 }
