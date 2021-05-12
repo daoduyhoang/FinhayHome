@@ -1,0 +1,127 @@
+.refund {
+  padding: 80px 0;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .row {
+    justify-content: space-between;
+    align-items: center;
+    @include Responsive(SM) {
+      margin-bottom: 20px;
+    }
+    @include Responsive(XS) {
+      margin-bottom: 0;
+    }
+  }
+  .refund-content {
+    width: 50%;
+    @include Responsive(SM) {
+      width: 43%;
+    }
+    h3 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.money_back {
+  background: #f0f0f0;
+  padding: 80px 0;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .row {
+    justify-content: space-between;
+  }
+  .money_back_item {
+    padding: 31px 24px;
+    background: #ffffff;
+    box-shadow: -5px 10px 30px #e0e0e0;
+    border-radius: 24px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      font-size: 34px;
+      font-weight: 700;
+      font-family: $averta;
+      margin-bottom: 16px;
+      @include Responsive(SM) {
+        font-size: 22px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 20px;
+      @include Responsive(SM) {
+        font-size: 16px;
+      }
+    }
+  }
+  .money_back_img {
+    text-align: right;
+    margin-top: 24px;
+  }
+}
+
+.companion {
+  padding: 80px 0;
+  .row {
+    align-items: center;
+  }
+  ul {
+    width: 50%;
+    li {
+      display: flex;
+      margin-bottom: 12px;
+      align-items: baseline;
+      p {
+        margin-bottom: 0;
+        margin-left: 12px;
+        font-size: 20px;
+      }
+    }
+  }
+  .img_companion {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    img {
+      text-align: right;
+    }
+  }
+}
+
+.quote {
+  padding: 80px 0;
+  background: #f0f0f0;
+  .row {
+    align-items: center;
+  }
+  .img_quote {
+    width: 50%;
+  }
+  .content_quote {
+    text-align: center;
+    width: 50%;
+    h3 {
+      font-size: 48px;
+      font-weight: 700;
+      @include Responsive(SM) {
+        font-size: 34px;
+      }
+    }
+    p {
+      font-size: 34px;
+      @include Responsive(SM) {
+        font-size: 16px;
+      }
+    }
+  }
+}

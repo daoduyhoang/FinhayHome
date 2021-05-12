@@ -1,0 +1,87 @@
+.banner-contact {
+  min-height: 479px;
+  background-image: url("../images/contact/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include Responsive(XS) {
+    background-image: url("../images/contact/map-mb.png");
+    min-height: 550px;
+  }
+}
+.contact {
+  padding-top: 80px;
+  padding-bottom: 130px;
+  @include Responsive(XS) {
+    padding-top: 40px;
+  }
+  h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    @include Responsive(XS) {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+  }
+  .experience {
+    font-size: 20px;
+    @include Responsive(XS) {
+      font-size: 16px;
+    }
+  }
+  .social_network {
+    margin-bottom: 80px;
+    .tiktok {
+      visibility: hidden;
+      @include Responsive(XS) {
+        visibility: visible;
+      }
+    }
+    li {
+      margin-bottom: 19px;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      font-size: 20px;
+      color: #333333;
+      display: block;
+      @include Responsive(XS) {
+        font-size: 16px;
+      }
+    }
+    img {
+      margin-right: 28px;
+
+      @include Responsive(XS) {
+        width: 17px;
+        margin-right: 11px;
+      }
+    }
+  }
+  .adress {
+    @include Responsive(XS) {
+      h2 {
+        margin-bottom: 40px;
+      }
+    }
+
+    ul {
+      li {
+        h6 {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: $averta;
+        }
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 24px;
+        img {
+          margin-right: 28px;
+          @include Responsive(XS) {
+            margin-right: 11px;
+          }
+        }
+      }
+    }
+  }
+}
