@@ -5,8 +5,10 @@
 @import "./grid";
 @import "./typography";
 
+@import "./component/menu_mobile";
+@import "./header";
+@import "./footer";
 @import "./pages/home";
-@import "./pages/_aboutus";
-@import "./pages/doitac";
 @import "./pages/dautu";
+@import "./pages/_tichluy";
 @import "./responsive";

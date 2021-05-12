@@ -1,13 +1,28 @@
 @font-face {
-  font-family: Averta;
-  src: url("../fonts/AvertaStdCY-Bold_1.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Averta for Finhay';
+    src: url("../fonts/AvertaforFinhay-Regular.ttf");
 }
 
 @font-face {
-  font-family: Averta-Regular;
-  src: url("../fonts/AvertaStdCY-Regular_3.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Averta for Finhay';
+    src: url("../fonts/AvertaforFinhay-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Averta for Finhay';
+    src: url("../fonts/AvertaforFinhay-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Averta for Finhay';
+    src: url("../fonts/AvertaforFinhay-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url("../fonts/AvertaStdCY-Bold_1.otf");
+    font-weight: 700;
 }

@@ -1,4 +1,5 @@
-.invest {
+.invest,
+.accumale {
   min-height: 472px;
   background-image: url("../images/Asset\ 11@20x\ 1.png");
   background-repeat: no-repeat;
@@ -7,6 +8,10 @@
     min-height: 400px;
     background-size: 400px;
     background-position: right 180px;
+  }
+  @include Responsive(XS) {
+    background-size: 255px;
+    background-position: right 438px;
   }
   .advantages {
     li {
@@ -51,6 +56,7 @@
   @include Responsive(XS) {
     padding-bottom: 30px;
   }
+
   .invest_finhay-mb {
     display: none;
   }
@@ -60,15 +66,21 @@
     background-position: right -232px;
   }
   @include Responsive(XS) {
+    background-size: 255px;
+    background-position: right -151px;
     .invest_finhay-pc {
       display: none;
     }
     .invest_finhay-mb {
       background-image: url(../images/dautu/Vector1.png);
       background-repeat: no-repeat;
-      background-size: 211px 521px;
-      background-position: 50px 100px;
+      background-size: 225px 547px;
+      background-position: 30px 112px;
       display: block;
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+      }
       .img_invest_finhay {
         width: 50%;
       }
@@ -82,6 +94,12 @@
       .receive {
         .content_invest_finhay {
           text-align: right;
+        }
+      }
+      .investment_funds {
+        padding-top: 50px;
+        h4 {
+          text-align: center;
         }
       }
     }
@@ -145,6 +163,13 @@
 
 .list-fund {
   padding: 80px 70px;
+  @include Responsive(XS) {
+    padding: 40px 16px;
+    .owl-nav,
+    .owl-dots {
+      display: none;
+    }
+  }
   h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -158,6 +183,9 @@
     text-align: center;
     margin-right: 20px;
     margin-bottom: 20px;
+    @include Responsive(XS) {
+      width: 100%;
+    }
   }
   .funds {
     flex-wrap: wrap;
@@ -173,6 +201,10 @@
   }
   h2 {
     margin-bottom: 40px;
+    @include Responsive(XS) {
+      text-align: left;
+      margin-bottom: 20px;
+    }
   }
   .list-portfolio {
     display: flex;
@@ -182,6 +214,11 @@
       padding: 17px;
       @include Responsive(SM) {
         margin-right: 0;
+      }
+      @include Responsive(XS) {
+        img {
+          width: 100%;
+        }
       }
     }
   }

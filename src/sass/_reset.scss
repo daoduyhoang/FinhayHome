@@ -1,22 +1,84 @@
 // RESET CSS
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 body {
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: 400;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 400;
 }
+
+img{
+    max-width: 100%;
+}
+
 @media (min-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
+    .container {
+        max-width: 990px;
+    }
+}
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .owl-carousel .owl-dots {
+        position: relative;
+        bottom: -8px;
+        margin-top: 10px;
+    }
+}
+
+.owl-carousel {
+    .owl-dots {
+        .owl-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            background: #E0E0E0;
+            margin: 0px 7px;
+            cursor: pointer;
+            &.active {
+                background: #00B935;
+            }
+            
+        }
+    }
+    &.dot-style2{
+        .owl-dots {
+            .owl-dot {
+                background: #E7E7E7;
+                &.active {
+                    background: #fff;
+                }
+            }
+        }
+    }
+    &.dot-style3{
+        .owl-dots {
+            .owl-dot {
+                background: #E7E7E7;
+                &.active {
+                    background: #000;
+                }
+            }
+        }
+    }
 }
