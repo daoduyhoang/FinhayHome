@@ -297,7 +297,7 @@ $("#section_accumale_mobile").owlCarousel({
       nav: false,
     },
     767: {
-      items: 1,
+      items: 4,
       nav: false,
     },
     991: {
