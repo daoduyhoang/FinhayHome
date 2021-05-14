@@ -6,9 +6,16 @@
   background-image: unset;
   .advantages {
     width: 50%;
+    li {
+      font-weight: 500;
+    }
   }
 }
 .stone {
+  padding: 80px 0;
+  h2 {
+    margin-bottom: 48px;
+  }
   background: #f0f0f0;
   .stone-item {
     background: #ffffff;
@@ -26,10 +33,11 @@
       font-size: 20px;
     }
   }
-  //   .stone-row-top {
-  //     justify-content: space-between;
-  //   }
-  //   .stone-row-bottom {
-  //     justify-content: center;
-  //   }
+  .stone-row-top {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .stone-row-bottom {
+    justify-content: center;
+  }
 }
