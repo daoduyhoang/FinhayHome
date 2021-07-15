@@ -1,0 +1,284 @@
+.knowledge {
+  .title-knowledge {
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+        width: 35%;
+      }
+    }
+  }
+  .search-block {
+    padding-top: 40px;
+    .knowledge-search {
+      background: #f0f0f0;
+      border-radius: 12px;
+      position: relative;
+      width: 634px;
+      margin: auto;
+      @media (max-width: 768px) {
+        width: 343px;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background: #f0f0f0;
+        height: 37px;
+        padding-left: 37px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        display: block;
+        background-image: url("../images/kienthuc/Icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    p {
+      color: #828282;
+      margin-top: 24px;
+      text-align: center;
+      @media (max-width: 768px) {
+        text-align: left;
+        font-size: 16px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .newpost {
+    padding-top: 32px;
+    padding-bottom: 60px;
+    // margin-bottom: 50px;
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+      margin-bottom: 32px;
+    }
+    .list-newpost {
+      margin-top: 56px;
+      @media (max-width: 768px) {
+        margin-top: 32px;
+      }
+      .owl-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        .owl-prev {
+          position: absolute;
+          left: -60px;
+          outline: unset;
+        }
+        .owl-next {
+          position: absolute;
+          right: -60px;
+          outline: unset;
+        }
+      }
+      .owl-dots {
+        bottom: -50px;
+        @media (max-width: 768px) {
+          bottom: 0;
+        }
+      }
+      .new-post-item {
+        h3 {
+          font-weight: bold;
+          font-size: 22px;
+          margin-top: 16px;
+          margin-bottom: 12px;
+          @media (max-width: 768px) {
+            margin-top: 32px;
+          }
+        }
+        p {
+          font-size: 16px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .info-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .author,
+    .date {
+      display: flex;
+      align-items: center;
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .categories {
+    padding-bottom: 64px;
+    padding-top: 64px;
+    @media (max-width: 768px) {
+      padding-bottom: 32px;
+    }
+    .list-categories {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+        margin-top: 32px;
+      }
+      .category-item {
+        background: #00ba3c;
+        border: 1px solid #00ba3c;
+        border-radius: 8px;
+        color: #fff;
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
+        &:hover {
+          background: #058748;
+        }
+      }
+    }
+  }
+
+  .videos {
+    .title-knowledge {
+      margin-bottom: 30px;
+    }
+    padding: 64px 0;
+    background-color: #f0f0f0;
+    .video-container {
+      flex-wrap: wrap;
+    }
+    .new-video {
+      @media (max-width: 768px) {
+        margin-bottom: 41px;
+      }
+    }
+    .new-video-item {
+      h5 {
+        color: #292929;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 24px;
+        margin-bottom: 17px;
+      }
+    }
+    .other-videos {
+      .view-all {
+        margin-bottom: 24px;
+        a {
+          color: #292929;
+        }
+      }
+      .other-video-item {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-column-gap: 20px;
+        align-items: center;
+        margin-bottom: 16px;
+        h5 {
+          font-size: 14px;
+          a {
+            color: #292929;
+            font-weight: 600;
+          }
+        }
+        .info-post {
+          .author,
+          .date {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .view-all-title {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 58px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      color: #333333;
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    margin-bottom: 26px;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  .investment-post,
+  .person_fin,
+  .insurrance {
+    background: #f0f0f0;
+  }
+
+  .highlight_week,
+  .investment-post,
+  .stock,
+  .person_fin,
+  .gold,
+  .insurrance {
+    padding-bottom: 64px;
+    padding-top: 32px;
+    .list-newpost {
+      margin-top: 0;
+      @media (max-width: 768px) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  .highlight_week {
+    .list-newpost {
+      margin-top: 32px;
+    }
+    @media (max-width: 768px) {
+      .new-post-item {
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        grid-column-gap: 20px;
+        align-items: center;
+        h3 {
+          font-size: 16px !important;
+          margin-top: 0 !important;
+        }
+        .info-post {
+          .author,
+          .date {
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
